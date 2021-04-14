@@ -1,0 +1,162 @@
+/*
+		Table of content:
+			2. General
+			3. Sidebar
+			4. Main content
+			5. Personal info
+			6. Repositories presentation
+			7. More info
+	*/
+/* 1. Colors  */
+/*Based on Horizon theme:https://horizontheme.netlify.app/*/
+:root
+		--bg: #16161C
+		--bg-alt: #2E303E
+		--fg: #D5D8DA
+		--fg-alt: #BBBBBB
+		--accent: #B877DB
+
+/* 2. General */
+*
+	font-family: "overpass", sans-serif
+	font-weight: 500
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+body
+	margin-left: 64px
+	display: flex
+	background-color: var(--bg)
+
+h1, input
+	display: none
+img.icon
+	height: 54px
+	width: 54px
+	margin: 5px
+p
+	padding: 1rem
+	text-align: justify
+strong
+	font-weight: bold
+a
+	color: var(--accent)
+	font-style: italic
+	font-weight: bolder
+	text-decoration: none
+/*
+.card
+	display: flex
+	p
+		flex-basis: 40rem
+	img
+		height: 7rem
+		width: 7rem*/
+
+/* 3. Sidebar */
+.sidebar
+	position: fixed
+	top: 0
+	left: 0
+	width : 64px
+	height: 100%
+	background-color: var(--accent)
+
+/* 4. Main content */
+.content-box
+	display: flex
+	margin: auto
+	padding: 5px
+	height: 100%
+	flex-basis: 960px
+	flex-direction: column
+	background-color: var(--bg-alt)
+	color: var(--fg)
+	box-shadow: 20px 0px 10px -10px
+
+/* 5. Personal info */
+.perso-box
+	flex-basis: 11rem
+	flex-grow: 1
+	display: flex
+	margin-bottom: 1rem
+	margin-left: 0.5rem
+	h2
+		height: 1rem
+		margin-bottom: 1rem
+	p
+		padding-top: 0
+		padding-bottom: 0
+	img
+		width: 10rem
+		height: 10rem
+		border: 3px solid black
+
+/* 6. Repositories presentation */
+.repo-box
+	background-color: var(--fg-alt)
+	color: var(--bg)
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	height: auto
+	width: 100%
+	input[type="radio"]:checked + label
+		background-color: var(--accent)
+	input[type="radio"]:checked + label + .Repos_content
+		display: flex
+.Repos_label
+	display: block
+	cursor: pointer
+	background-color: transparent
+.Repos_content
+	order: 1
+	width: 100%
+	height: 100%
+	display: none
+	background-color: var(--fg)
+	p
+		max-width: 100%
+
+/* 7. More info */
+.more-box
+	display: grid
+	grid-template-columns: 7rem auto 7rem
+	flex-direction: column
+	h2
+		grid-column: 1 / 4
+		/*! this header style is not from me*/
+		overflow: hidden
+		text-align: center
+
+		&:before, &:after
+			background-color: var(--fg)
+			content: ""
+			display: inline-block
+			height: 0.1rem
+			position: relative
+			vertical-align: middle
+			width: 50%
+
+		&:before
+			right: 1rem
+			margin-left: -50%
+
+		&:after
+			left: 1rem
+			margin-right: -50%
+	p
+		grid-column: 2
+		height: 7rem
+	img
+		height: 7rem
+		width: 7rem
+	.intro
+		text-align: center
+		margin-bottom: 2rem
+		height: 3rem
+	.left
+		grid-column: 1
+	.right
+		grid-column: 3

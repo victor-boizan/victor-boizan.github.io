@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./Style/style.css">
+		<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+		<link rel='stylesheet' href='https://overpass-30e2.kxcdn.com/overpass.css'>
+	</head>
+	<title>Victor Boizan</title>
+	<body>
+		<nav class="sidebar">
+			<a href="#personel" style="display: none;">Passer la navbar</a>
+			<a href="#">
+				<img class="icon" src="https://avatars.githubusercontent.com/u/65656779?s=460&v=4" alt="Home">
+			</a>
+			<hr>
+			<a href="https://github.com/victor-boizan">
+				<img class="icon" src="./Ressource/GitHub-Mark-64px.png" alt="GitHub">
+			</a>
+			<ul>
+				<li>
+					<a href="https://github.com/victor-boizan/Rorg-agenda">
+						<img class="icon" src="./Ressource/Rorg.svg" alt="Rorg-agenda">
+					</a>
+				</li>
+			</ul>
+
+		</nav>
+		<div class="content-box">
+			<div class="card perso-box">
+				<h1 id="personal">Petite presentation</h1>
+					<img  src="https://avatars.githubusercontent.com/u/65656779?s=460&v=4" alt="Ma photo de profil" width="256">
+					<p>
+						<strong>Victor Boizan<br><br></strong>
+						J'ai commencé à programmer dans mon coin en 2019 au même moment que je
+						me mettais à utiliser <strong>Linux</strong>.
+						J'ai commencé par le C,  puis le <strong>Python</strong> et enfin je
+						me suis concentré sur la programmation de script shell.
+						Aujourd'hui je code principalement en <strong>Rust</strong> et en
+						<strong>Lua</strong> et j'essaye de coder un programme de gestion du
+						temps appeler Rorg.
+					</p>
+			</div>
+			<div class="repo-box">
+				<h1>Mes repos</h1>
+					<input class="Repos_radio" type="radio" name="Repos"  id="Repos_tab_1" checked>
+					<label class="Repos_label" for="Repos_tab_1"><img class="icon" src="./Ressource/Rorg.svg" alt="Simple agenda"></label>
+					<div class="Repos_content" id="Repos_content_1">
+						<p>
+							<a href="https://github.com/victor-boizan/Rorg-agenda"><strong>Rorg</strong></a>
+							est un projet qui a pour but de cree un logiciel de gestion du temps
+							base sur <strong>org-mode</strong>. Le logiciel est coder en <strong>Rust</strong>
+							et utilise le language de balisage <strong>org</strong>.
+							Les fichier generer par le logiciel devrais pouvoire etre utilise avec org-mode.
+							L'objectif est d'avoire un logiciel qui permet de suivre ses tache,
+							de les afficher et de les organiser d'une magniere uniforme.
+							Le system ne sera pas forcement tres addaptable mais pouras permetre
+							d'organiser et d'automatiser son processus de travail plus facilement
+							qu'avec org-mode et de decentraliser ce processus de travail d'emacs.
+						</p>
+					</div>
+				</div>
+			<div class="more-box">
+				<h2><strong>Linux</strong></h2>
+					<p class="intro">
+						J'ai commencer a tester Linux en septembre 2019 et je n'utilise que
+						ce system au quotidien depuis mars 2020. J'ai debuter avec PopOS
+						mais rapidement je suis passer sur manjaro puis Archlinux.
+					</p>
+
+					<img class="left" src="./Ressource/archlinux-icon-crystal-128.svg" alt="Archlinux">
+					<p>
+						Aujourd'huit j'utilise archlinux comme system principale.
+						C'est un system flexible, tres bien maintenus et avec enormement
+						de logiciel facile d'acces grace a l'AUR.
+					</p>
+					<br>
+
+					<p>
+						J'ai utilise debian comme system pour mon serveur et y avais
+						installer une instance nextcloud, jellyfin et un serveur de jeu.
+						J'ai choisi cette distro car elle est tres stable et que c'est
+						un peut la distibution par default.
+					</p>
+					<img class="right" src="./Ressource/openlogo-nd.svg" alt="Debian">
+
+					<img class="left" src="./Ressource/openSUSE-button-colour.png" alt="openSUSE">
+					<p>
+						J'ai recament changer la distribution de mon serveur pour
+						openSUSE dans sa version tumbleweed. L'objectif de ce serveur
+						etant aussi d'experimenter avec des service web je me suis dit
+						qu'une distribution en roling realease serais plus adapter.
+					</p>
+					<br>
+
+				<h2><strong>La programmation</strong></h2>
+					<p class="intro">
+						RUST Posix-shell
+					</p>
+
+					<p>
+						J'ecrit des script pour mon system et j'essay de faire en sorte
+						qu'il puisent etre lancer avec <strong>/bin/sh</strong>, cela les rendant plus "portable".
+						Je cree surtout des script qui ont pour but d'etre utiliser avec
+						un simple racourcis clavier ou pour me permetre d'avoire une
+						interface en utilisant par exemple <a href="https://tools.suckless.org/dmenu/">dmenu</a>
+					</p>
+					<img class="right" src="./Ressource/shell.svg" alt="Shell">
+
+					<img class="left" src="./Ressource/rustacean-flat-gesture.svg" alt="Rust">
+					<p>
+						Le language rust est pour moi tres interesant a utiliser car il
+						force une certaine rigueur et permet un grand controle sur
+						ce que vas faire le programe tout en donnant une certaine securite
+						au niveaux de l'execution. C'est ce que je prefert utiliser
+						si j'ai le choix et que je sais que le projet sera complex
+					</p>
+					<br>
+
+			</div>
+		</div>
+	</body>
+</html>
